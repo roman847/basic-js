@@ -19,7 +19,7 @@ class DepthCalculator {
     arr.forEach((el) => {
       if (Array.isArray(el)) {
         count = this.calculateDepth(el) + 1;
-        if (count > levels) levels = count;
+        levels = count;
       }
     });
     return levels;
